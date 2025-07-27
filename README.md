@@ -162,8 +162,8 @@ curl -X 'POST' \
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your‑username/LINEAR_REGRESSION_MODEL.git
-cd LINEAR_REGRESSION_MODEL/summative
+https://github.com/Solomon-the-octave/retail_store_model
+cd retail_store_model/summative
 ```
 
 ---
