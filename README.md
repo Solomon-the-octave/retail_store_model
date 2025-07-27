@@ -93,11 +93,11 @@ LINEAR_REGRESSION_MODEL/
 ### Predict Price
 
 **Endpoint**  
-```
+
 
 POST [https://retail-store-model.onrender.com/predict\_price](https://retail-store-model.onrender.com/predict_price)
 
-````
+
 
 **cURL Example**  
 ```bash
