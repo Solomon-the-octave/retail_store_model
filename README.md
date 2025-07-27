@@ -52,20 +52,37 @@ This synthetic dataset contains over 73 000 daily records across multiple stor
 
 ##  Project Structure
 ```
+LINEAR_REGRESSION_MODEL/
+├── summative/
+│   ├── API/
+│   │   ├── __pycache__/                  # Compiled Python bytecode
+│   │   ├── prediction.py                 # FastAPI app: serves predictions
+│   │   ├── preprocessor.joblib           # Saved preprocessing pipeline
+│   │   ├── best_model.joblib             # Trained RandomForestRegressor model
+│   │   └── requirements.txt              # Python dependencies for the API
+│
+│   ├── linear_regression/
+│   │   ├── retail_store_inventory.csv    # Dataset used for training
+│   │   └── retail_store_inventory.ipynb  # Notebook for EDA and model training
+│
+├── FlutterApp/
+│   ├── lib/
+│   │   └── main.dart                     # Flutter frontend app: user input & result UI
+│   ├── android/                          # Android platform-specific code
+│   ├── ios/                              # iOS platform-specific code
+│   ├── linux/                            # Linux build support
+│   ├── macos/                            # macOS build support
+│   ├── web/                              # Web build support
+│   ├── windows/                          # Windows build support
+│   ├── pubspec.yaml                      # Flutter project configuration
+│   ├── pubspec.lock                      # Locked package versions
+│   ├── analysis_options.yaml             # Dart analysis config
+│   ├── .metadata                         # Flutter metadata
+│   ├── .gitignore                        # Git ignore rules
+│   └── .flutter-plugins-dependencies     # Auto-managed Flutter dependencies
+│
+├── README.md                             # Project overview and setup instructions
 
-LINEAR\_REGRESSION\_MODEL/
-├─ summative/
-│  ├─ API/
-│  │  ├─ prediction.py         # FastAPI app: loads preprocessor.joblib & best\_model.joblib
-│  │  ├─ preprocessor.joblib   # Feature‑engineering pipeline
-│  │  ├─ best\_model.joblib     # Trained RandomForestRegressor
-│  │  └─ requirements.txt      # Python dependencies
-│  ├─ retail\_store\_inventory.csv   # Raw dataset for retraining
-│  └─ retail\_store\_inventory.ipynb # EDA, feature engineering, model training
-├─ FlutterApp/
-│  └─ lib/
-│     └─ main.dart            # Flutter UI: input features & display predictions
-└─ README.md                  # ← You’re here!
 
 ```
 
